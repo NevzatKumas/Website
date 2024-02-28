@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nevzat Kumas Webpage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "container">
+      <button id = abtMeBtn>About Me</button>
+      <button id = linkedInBtn>LinkedIn</button>
+      <button id = resumeBtn>Resume/CV</button>
+    <h1>Welcome to my page!</h1>
+    <img src = "pfp.jpg" alt="pfp">
+    <p>My name is Nevzat Kumas and I am an IT Analyst I for the PTC!</p>
+    <script>
+      function LinkedInRedirect(){
+        console.log("button clicked")
+        window.open("https://www.linkedin.com/in/nevzatkumas/", '_blank');
+      }
+      var linkedInButton = document.getElementById("linkedInBtn");
+      linkedInButton.addEventListener("click",LinkedInRedirect)
+
+      function AboutMeRedirect(){
+        console.log("about me btn clicked")
+        location.href="aboutMe.html"
+      }
+      var aboutMeButton = document.getElementById("abtMeBtn");
+      aboutMeButton.addEventListener('click', AboutMeRedirect)
+    </script>
+  </body>
+</html>
